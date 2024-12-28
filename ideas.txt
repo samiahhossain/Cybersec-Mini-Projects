@@ -1,0 +1,7 @@
+- password manager
+- keylogger
+- email extraction
+- port scanner
+- shiftkey version
+
++ learn the tools
