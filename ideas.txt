@@ -1,9 +1,6 @@
 - password manager
-- keylogger
-- email extraction
 - port scanner
-- encryption methods
+- encryption methods: substitution, rsa, caesar, hashing, enigma, diffie-hellman
 - image encryptor?
-- shiftkey version
 
 + learn the tools
