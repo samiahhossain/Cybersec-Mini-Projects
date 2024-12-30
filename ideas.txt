@@ -2,6 +2,8 @@
 - keylogger
 - email extraction
 - port scanner
+- encryption methods
+- image encryptor?
 - shiftkey version
 
 + learn the tools
