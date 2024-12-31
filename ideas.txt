@@ -1,5 +1,5 @@
 - password manager
-- port scanner
+- port scanner (mini)
 - encryption methods: substitution, rsa, caesar, hashing, enigma, diffie-hellman
 - image encryptor?
 
