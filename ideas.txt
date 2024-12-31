@@ -3,4 +3,6 @@
 - encryption methods: substitution, rsa, caesar, hashing, enigma, diffie-hellman
 - image encryptor?
 
+COMMENT FILES
+
 + learn the tools
