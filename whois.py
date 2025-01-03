@@ -1,11 +1,14 @@
 import socket
 
 def lookup(domain: str):
-    my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    my_socket.connect(("whois.iana.org", 43))
-    my_socket.send(f"{domain}\r\n".encode())
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # Connection
+    s.connect(("whois.iana.org", 43))
+    # Request
+    s.send(f"{domain}\r\n".encode())
+    # Information retrieved
     response = my_socket.recv(4096).decode()
-    my_socket.close()
+    s.close()
     return response
 
 site = input("What site would you like to look up? ")

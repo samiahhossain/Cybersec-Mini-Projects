@@ -3,6 +3,7 @@ import string
 
 characters = list(" " + string.ascii_letters + string.digits + string.punctuation)
 key = characters.copy()
+# New key each time
 random.shuffle(key)
 
 message = input("Enter your message: ")
