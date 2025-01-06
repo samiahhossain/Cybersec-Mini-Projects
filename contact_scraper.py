@@ -42,7 +42,7 @@ try:
         new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
         emails.update(new_emails)
 
-        # TEST: phone numbers
+        # Collect text matching the regex (phone numbers)
         new_numbers = set(re.findall(r"\(\d{3}\) \d{3}-\d{4}|\d{3}-\d{3}-\d{4}", response.text, re.I))
         phone_numbers.update(new_numbers)
 
@@ -63,12 +63,13 @@ try:
 except KeyboardInterrupt:
     print('Closing!')
 
-# Display results
+# Display emails
 for mail in emails:
     print(mail)
-print(f"Found {len(emails)} emails.")
 
-# TEST: phone numbers
+# Display phone numbers
 for number in phone_numbers:
     print(number)
+
+print(f"Found {len(emails)} emails.")
 print(f"Found {len(phone_numbers)} phone numbers.")
