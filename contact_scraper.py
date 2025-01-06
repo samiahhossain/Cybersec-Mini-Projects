@@ -14,6 +14,7 @@ limit = int(input("How many sites do you want to search through? "))
 count = 0
 scraped_urls = set()
 emails = set()
+phone_numbers = set()
 
 try:
     while len(urls):
@@ -41,6 +42,10 @@ try:
         new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
         emails.update(new_emails)
 
+        # TEST: phone numbers
+        new_numbers = set(re.findall(r"\(\d{3}\) \d{3}-\d{4}|\d{3}-\d{3}-\d{4}", response.text, re.I))
+        phone_numbers.update(new_numbers)
+
         # Allow for HTML/XML parsing
         soup = BeautifulSoup(response.text, features="lxml")
 
@@ -62,3 +67,8 @@ except KeyboardInterrupt:
 for mail in emails:
     print(mail)
 print(f"Found {len(emails)} emails.")
+
+# TEST: phone numbers
+for number in phone_numbers:
+    print(number)
+print(f"Found {len(phone_numbers)} phone numbers.")
