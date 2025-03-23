@@ -1,4 +1,6 @@
-The following tools were made for educational purposes only. They should not be used for any unethical or illegal practices.
+# Projects exploring cybersecurity!
+
+*The following tools were made for educational purposes only. They should not be used for any unethical or illegal practices.*
 
 
 WHOIS LOOKUP: Ethical hackers use this tool frequently. I followed a tutorial to run a lookup locally by using a python script and to understand what kind of information can be obtained from a lookup.
